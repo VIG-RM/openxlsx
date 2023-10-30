@@ -92,5 +92,5 @@ validate_StyleName <- function(x) {
   m
 }
 
-valid_StyleNames <- c("none", paste0("TableStyleLight", 1:21), paste0("TableStyleMedium", 1:28), paste0("TableStyleDark", 1:11))
+valid_StyleNames <- c("none", paste0("TableStyleLight", 1:21), paste0("TableStyleMedium", 1:28), paste0("TableStyleDark", 1:11), "TableStyleVIG")
 valid_StyleNames_low <- tolower(valid_StyleNames)

@@ -120,7 +120,7 @@ read.xlsx.default <- function(
     sheetselected <- FALSE
   }
   
-  if (!grepl("\\.xlsx|\\.xlsm$", xlsxFile)) {
+  if (!grepl("(?i)\\.xls(x|m)$", xlsxFile)) {
     stop("openxlsx can only read .xlsx or .xlsm files", call. = FALSE)
   }
   

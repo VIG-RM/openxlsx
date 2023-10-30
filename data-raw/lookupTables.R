@@ -8,5 +8,5 @@ usethis::use_data(
   internal = TRUE
 )
 
-# usethis::use_data(openxlsxFontSizeLookupTable, overwrite = TRUE)
-# usethis::use_data(openxlsxFontSizeLookupTableBold, overwrite = TRUE)
+usethis::use_data(openxlsxFontSizeLookupTable, overwrite = TRUE)
+usethis::use_data(openxlsxFontSizeLookupTableBold, overwrite = TRUE)

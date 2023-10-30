@@ -1829,8 +1829,7 @@ deleteData <- function(wb, sheet, cols, rows, gridExpand = FALSE) {
 #' }
 #' deleteDataColumn(wb, 1, col = 3)
 #' \dontrun{
-#' saveWorkbook(wb, "deleteDataColumnExample.xlsx", overwrite = TRUE)
-#' }
+#' saveWorkbook(wb, "deleteDataColumnExample.xlsx", overwrite = TRUE) }
 deleteDataColumn <- function(wb, sheet, col) {
   sheet <- wb$validateSheet(sheet)
   if (is.character(col)) col <- col2int(col)

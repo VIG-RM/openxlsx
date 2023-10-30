@@ -2,6 +2,7 @@
 #' 
 #' Lookup tables for font size 
 #' 
+#' @rdname openxlsxFontSizeLookupTable
 #' @format A data.frame with column names corresponding to font names
 "openxlsxFontSizeLookupTable"
 

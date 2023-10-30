@@ -207,6 +207,14 @@ genBaseSheetRels <- function(sheetInd) {
 }
 
 genBaseStyleSheet <- function(dxfs = NULL, tableStyles = NULL, extLst = NULL) {
+  if (is.null(dxfs) && is.null(tableStyles)) {
+      dxfs <- c('<dxf><border><left style="thin"><color rgb="FFE2E2E2"/></left><right style="thin"><color rgb="FFE2E2E2"/></right><vertical style="thin"><color rgb="FFE2E2E2"/></vertical></border></dxf>',
+                               '<dxf><fill><patternFill><bgColor rgb="FFE2E2E2"/></patternFill></fill><border><vertical style="thin"><color rgb="FFFFFFFF"/></vertical></border></dxf>',
+                               '<dxf><font><color rgb="FFFFFFFF"/></font><fill><patternFill><bgColor rgb="FF595959"/></patternFill></fill><border><vertical style="thin"><color theme="0"/></vertical></border></dxf>',
+                               '<dxf><border><bottom style="thin"><color rgb="FF595959"/></bottom></border></dxf>')
+      tableStyles <- '<tableStyles count="1" defaultTableStyle="TableStyleMedium2" defaultPivotStyle="PivotStyleLight16"><tableStyle name="TableStyleVIG" pivot="0" count="4"><tableStyleElement type="wholeTable" dxfId="3"/><tableStyleElement type="headerRow" dxfId="2"/><tableStyleElement type="firstRowStripe" dxfId="1"/><tableStyleElement type="secondRowStripe" dxfId="0"/></tableStyle></tableStyles>'
+  }
+  
   list(
     numFmts = NULL,
 

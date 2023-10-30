@@ -800,7 +800,7 @@ loadWorkbook <- function(file, xlsxFile = NULL, isUnzipped = FALSE) {
 
     ## vmlDrawing and comments
     if (length(commentsXML) > 0) {
-      drawXMLrelationship <- lapply(xml, function(x) grep("drawings/vmlDrawing[0-9]+\\.vml", x, value = TRUE))
+      drawXMLrelationship <- lapply(xml, function(x) grep("drawings/vml(D|d)rawing[0-9]+\\.vml", x, value = TRUE))
       hasDrawing <- sapply(drawXMLrelationship, length) > 0 ## which sheets have a drawing
 
       commentXMLrelationship <- lapply(xml, function(x) grep("comments[0-9]+\\.xml", x, value = TRUE))

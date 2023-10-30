@@ -28,9 +28,8 @@ for (i in seq(5)) {
                x = sprintf("=COUNTA(\%s2:\%s11)", int2col(i), int2col(i)))
 }
 deleteDataColumn(wb, 1, col = 3)
-#' \dontrun{
-saveWorkbook(wb, "deleteDataColumnExample.xlsx", overwrite = TRUE)
-}
+\dontrun{
+saveWorkbook(wb, "deleteDataColumnExample.xlsx", overwrite = TRUE) }
 }
 \author{
 David Zimmermann
